@@ -8,7 +8,7 @@ package tp2_bieres_duvelleroy;
  *
  * @author valen
  */
- public class BouteilleBiere {
+public class BouteilleBiere {
 
     public String nom;
     public float degreAlcool;
@@ -25,14 +25,14 @@ package tp2_bieres_duvelleroy;
         degreAlcool = unDegre;
         brasserie = uneBrasserie;
         ouverte = false;
-        
-    public boolean Decapsuler (); {
+    }
+
+    public boolean Decapsuler() {
         if (ouverte == false) {
-     Decapsuler = true
- }
+            boolean Decapsuler = true;} 
         else {
-     Decapsuler = true
- }
-    
+            boolean Decapsuler = true;
+        }
+        return false;
     }
 }
