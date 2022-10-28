@@ -49,8 +49,13 @@ public class TP2_Bieres_DUVELLEROY {
         System.out.println(uneBiere.ouverte);
         boolean Decapsuler = uneBiere.Decapsuler();
         System.out.println(uneBiere.ouverte);
-        System.out.println(uneBiere) ;
+        System.out.println(uneBiere);
 
+        System.out.println(autreBiere);
+        System.out.println(duvelBiere);
+        System.out.println(heinekenBiere);
+        
+        
     }
 
 }

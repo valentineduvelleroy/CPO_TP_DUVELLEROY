@@ -16,6 +16,7 @@ public class BouteilleBiere {
     public float degreAlcool;
     public String brasserie;
     public boolean ouverte;
+    
 
     public void lireEtiquette() {
         System.out.println("Bouteille de " + nom + " (" + degreAlcool + " degres) \nBrasserie : " + brasserie);
@@ -31,16 +32,15 @@ public class BouteilleBiere {
     public boolean Decapsuler() {
         if (ouverte == false) { 
             ouverte = true;
-            System.out.println("La binouze est prete a se faire deguster");
+            System.out.println("La bière est ouverte");
         return true;}
         else {
             System.out.println("La biere n'est pas ouverte");
             return false;
             
         }
-     
-
     }
+@Override   
 public String toString() {
 String chaine_a_retourner;
 chaine_a_retourner = nom +" "+ degreAlcool + " degrès ouverte ? ";
@@ -49,6 +49,4 @@ else chaine_a_retourner += "non" ;
 return chaine_a_retourner ;
 }
 }
-
-    
 
