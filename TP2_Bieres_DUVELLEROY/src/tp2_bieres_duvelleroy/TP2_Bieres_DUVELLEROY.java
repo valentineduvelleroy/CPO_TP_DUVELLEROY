@@ -4,6 +4,8 @@
  */
 package tp2_bieres_duvelleroy;
 
+import static java.time.Clock.system;
+
 /**
  *
  * @author valen
@@ -42,9 +44,13 @@ public class TP2_Bieres_DUVELLEROY {
         duvelBiere.lireEtiquette();
         
        BouteilleBiere heinekenBiere = new BouteilleBiere("Heineken", (float) 9.6 ,"Heineken") ;
-       
         heinekenBiere.lireEtiquette();
         
+        System.out.println(uneBiere.ouverte);
+        boolean Decapsuler = uneBiere.Decapsuler();
+        System.out.println(uneBiere.ouverte);
+        System.out.println(uneBiere) ;
+
     }
 
 }

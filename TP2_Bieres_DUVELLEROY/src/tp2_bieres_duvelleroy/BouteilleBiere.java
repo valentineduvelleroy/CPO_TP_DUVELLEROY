@@ -4,6 +4,8 @@
  */
 package tp2_bieres_duvelleroy;
 
+import static java.time.Clock.system;
+
 /**
  *
  * @author valen
@@ -26,13 +28,27 @@ public class BouteilleBiere {
         brasserie = uneBrasserie;
         ouverte = false;
     }
-
     public boolean Decapsuler() {
-        if (ouverte == false) {
-            boolean Decapsuler = true;} 
+        if (ouverte == false) { 
+            ouverte = true;
+            System.out.println("La binouze est prete a se faire deguster");
+        return true;}
         else {
-            boolean Decapsuler = true;
+            System.out.println("La biere n'est pas ouverte");
+            return false;
+            
         }
-        return false;
+     
+
     }
+public String toString() {
+String chaine_a_retourner;
+chaine_a_retourner = nom +" "+ degreAlcool + " degrès ouverte ? ";
+if (ouverte == true ) chaine_a_retourner += "oui" ;
+else chaine_a_retourner += "non" ;
+return chaine_a_retourner ;
 }
+}
+
+    
+
