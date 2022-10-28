@@ -27,12 +27,12 @@ public double FarenheitVersCelsius ( double TF ){
 }
 
 public double CelsiusVersFarenheit ( double TC ){
-    double TF = (TC * 1.8) - 32 ;
+    double TF = (TC * 1.8) - 32;
         return TF;
 }
 
 public double FarenheitVersKelvin ( double TF ){
-    double TK = ;
+    double TK = TF * (TF - 32) / 1.8 + 273.14;
         return TK;
 }
 
