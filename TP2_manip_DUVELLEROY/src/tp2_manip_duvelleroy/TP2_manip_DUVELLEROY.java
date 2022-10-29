@@ -24,13 +24,12 @@ public class TP2_manip_DUVELLEROY {
 
        //Moussaka assiette666 = assiette1 ;
        //Moussaka assiette667 = new Tartiflette() ;
-       
-       
-        
+      
+       Moussaka tab [] = new Moussaka [10];
+        for (int i = 0; i < 9; i++){
+            Moussaka T = new Moussaka();
+            tab[i]=T;
+            System.out.println(tab[i]);
+        }
     }
-        
-    
-               
-    
-    
 }

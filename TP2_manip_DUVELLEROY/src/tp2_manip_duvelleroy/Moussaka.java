@@ -9,7 +9,6 @@ package tp2_manip_duvelleroy;
  * @author valen
  */
 public class Moussaka {
-   int nbCalories;
-     
-   
+    int nbCalories;
+       
 }
