@@ -11,7 +11,6 @@ import static java.time.Clock.system;
  * @author valen
  */
 public class BouteilleBiere {
-
     public String nom;
     public float degreAlcool;
     public String brasserie;
