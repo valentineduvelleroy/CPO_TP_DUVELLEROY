@@ -13,33 +13,43 @@ public class Convertisseur {
    
 public double CelsiusVersKelvin ( double TC ){
     double TK = TC + 273.14;
+    nbConversions +=1;
         return TK;
 }
 
 public double KelvinVersCelsius ( double TK ){
     double TC = TK - 273.14;
+    nbConversions +=1;
         return TC;
 }
 
 public double FarenheitVersCelsius ( double TF ){
     double TC = (TF - 32) / 1.8;
+    nbConversions+=1;
         return TC;
 }
 
 public double CelsiusVersFarenheit ( double TC ){
     double TF = (TC * 1.8) - 32;
+    nbConversions +=1;
         return TF;
 }
 
 public double FarenheitVersKelvin ( double TF ){
     double TK = TF * (TF - 32) / 1.8 + 273.14;
+    nbConversions +=1;
         return TK;
 }
 
 public double KelvinVersFarenheit ( double TK ){
-    double TF = ;
+    double TF = (TK - 273.14) * 1.8 + 32;
+    nbConversions +=1;
         return TF;
 }
+@Override
+public String toString () {
+ return "nb de conversions"+ nbConversions;
 }
 
+}
 
