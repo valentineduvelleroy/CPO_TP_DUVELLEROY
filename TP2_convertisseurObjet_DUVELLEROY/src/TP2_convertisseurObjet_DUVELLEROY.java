@@ -14,13 +14,12 @@ public class TP2_convertisseurObjet_DUVELLEROY {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-    
- 
-    Scanner sc;
-    sc = new Scanner(System.in);
-    System.out.println("Saisir un nombre");
-    double n1 = sc.nextDouble();
-
+       
+    int nb;
+    //nb
+    Scanner sc = new Scanner(System.in);
+    System.out.println("\n Entrer un nombre :");
+    nb=sc.nextInt();
         
         
         
