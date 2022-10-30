@@ -28,7 +28,8 @@ public class TP2_manip_DUVELLEROY {
         System.out.println("nb de calories de Assiette 2 : " + assiette2.nbCalories) ;
         System.out.println("nb de calories de Assiette 3 : " + assiette3.nbCalories) ;
 
-       //Les deux lignes de codes ne fonctionnent pas
+       //Les deux lignes de codes ne fonctionnent pas : le type tartiflette ne peut pas référencier
+       //une moussaka et vice versa, ce sont des classes différentes
        //Moussaka assiette666 = assiette1 ;
        //Moussaka assiette667 = new Tartiflette() ;
       
