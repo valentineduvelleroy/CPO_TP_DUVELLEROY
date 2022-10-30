@@ -12,17 +12,20 @@ public class Voiture {
     public String Modele;
     public String Marque;
     public int PuissanceCV;
+    public Personne proprietaire;
     
-    public Voiture(String unModele, String uneMarque, int unePuissance){
+    
+    public Voiture(String unModele, String uneMarque, int unePuissance, Personne unProprietaire){
     Modele = unModele;
     Marque = uneMarque;
     PuissanceCV = unePuissance;
+    proprietaire = null;
     }
     
     @Override
     public String toString() {
         String V;
-        V = Modele + " " + Marque + " " + PuissanceCV;
+        V = Modele + " " + Marque + " " + PuissanceCV + " " + proprietaire;
         return V;
     }
     

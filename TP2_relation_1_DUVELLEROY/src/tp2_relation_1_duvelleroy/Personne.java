@@ -9,13 +9,24 @@ package tp2_relation_1_duvelleroy;
  * @author valen
  */
 public class Personne {
-    public String nom;
     public String prenom;
-    
-    public Personne(String unNom, String unPrenom){
-        nom = unNom;
+    public String nom;
+    public int nbVoitures;
+    public Voiture[] liste_voitures;
+            
+            
+    public Personne(String unPrenom, String unNom, int unnb, Voiture[] uneliste){
         prenom = unPrenom;
-  
+        nom = unNom;
+        nbVoitures = unnb;
+        liste_voitures = uneliste;
     }
+    
+        @Override
+        public String toString(){
+            String P;
+            P = prenom + " " + nom + " " + nbVoitures + " " + liste_voitures;
+            return P;
+        }
     
 }
