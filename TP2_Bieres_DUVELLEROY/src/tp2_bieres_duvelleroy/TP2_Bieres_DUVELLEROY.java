@@ -17,6 +17,7 @@ public class TP2_Bieres_DUVELLEROY {
      */
     public static void main(String[] args) {
 
+        //Deux différentes façons de créer des bières
         /**
          * BouteilleBiere uneBiere = new BouteilleBiere(); uneBiere.nom = "Cuvée
          * des trolls"; uneBiere.degreAlcool = (float) 7.0; uneBiere.brasserie =
@@ -31,6 +32,8 @@ public class TP2_Bieres_DUVELLEROY {
          * "Leffe"; autreBiere.degreAlcool = (float) 6.6; autreBiere.brasserie =
          * "Abbaye de Leffe"; autreBiere.ouverte = false;
          */
+        
+        //Création de 4 bières différentes
         BouteilleBiere autreBiere = new BouteilleBiere("Leffe", (float) 6.6, "Abbaye de Leffe");
         autreBiere.lireEtiquette();
 
@@ -43,9 +46,9 @@ public class TP2_Bieres_DUVELLEROY {
         BouteilleBiere heinekenBiere = new BouteilleBiere("Heineken", (float) 9.6, "Heineken");
         heinekenBiere.lireEtiquette();
 
-        System.out.println(uneBiere.ouverte);
+        System.out.println(uneBiere.ouverte); //On vérifie avant Decapsuler si elle est ouverte ou non
         boolean Decapsuler = uneBiere.Decapsuler();
-        System.out.println(uneBiere.ouverte);
+        System.out.println(uneBiere.ouverte); //On vérifie maintenant si elle est ouverte
         System.out.println(uneBiere);
 
         System.out.println(autreBiere);
