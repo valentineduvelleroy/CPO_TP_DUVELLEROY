@@ -8,7 +8,7 @@ package tp2_relation_1_duvelleroy;
  *
  * @author valen
  */
-public class Voiture {
+public class Voiture { //Création de la classe Voiture + attributs
     public String Modele;
     public String Marque;
     public int PuissanceCV;
@@ -19,14 +19,14 @@ public class Voiture {
     Modele = unModele;
     Marque = uneMarque;
     PuissanceCV = unePuissance;
-    proprietaire = null;
+    proprietaire = null; 
     }
     
     @Override
     public String toString() {
-        String V;
+        String V; //Chaine
         V = Modele + " " + Marque + " (" + PuissanceCV + " cv)";
-        return V;
+        return V; //Retourne la chaine avec ses attributs 
     }
     
 }

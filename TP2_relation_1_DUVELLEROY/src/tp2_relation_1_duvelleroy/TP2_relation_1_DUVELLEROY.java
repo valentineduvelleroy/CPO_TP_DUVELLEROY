@@ -15,7 +15,7 @@ public class TP2_relation_1_DUVELLEROY {
      */
     public static void main(String[] args) {
         
-        
+      //Création des voitures + personnes
       Voiture uneClio = new Voiture ("Clio", "Renault", 5, null) ;
       Voiture uneAutreClio = new Voiture ("Clio", "Renault", 5, null) ;
       Voiture uneBMW = new Voiture ("325", "BMW", 9, null) ;
