@@ -15,19 +15,21 @@ public class TP2_convertisseurObjet_DUVELLEROY {
      */
     public static void main(String[] args) {
        
-    int nb;
-    Scanner sc = new Scanner(System.in);
+    int nb; 
+    Scanner sc = new Scanner(System.in); 
     System.out.println("\nEntrer un nombre :");
-    nb = sc.nextInt();
+    nb = sc.nextInt(); //Fonctionne comme un input d'un entier
     
-    Convertisseur Numero1 = new Convertisseur();
+    Convertisseur Numero1 = new Convertisseur(); //Déclare deux convertisseurs Numero1 et 2
     Convertisseur Numero2 = new Convertisseur();
     
-    Numero1.CelsiusVersKelvin(10.0);
+    //Test du nombre de nbConversions
+    Numero1.CelsiusVersKelvin(10.0); 
     Numero1.KelvinVersFarenheit(13.0);
     Numero2.FarenheitVersCelsius(25.0);
-    System.out.println( "Le nombre de conversions de Numero1 est " + Numero1.nbConversions + " et de Numero2 est " + Numero2.nbConversions + "");
+    System.out.println("Le nombre de conversions de Numero1 est " + Numero1.nbConversions + " et de Numero2 est " + Numero2.nbConversions + "");
     
+    //Affichage du menu des différentes conversions
     System.out.println("\nQuelle conversion souhaitez-vous faire ?:");
     System.out.println("1)CelsiusVersKelvin");
     System.out.println("2)KelvinVersCelsius");
@@ -35,17 +37,17 @@ public class TP2_convertisseurObjet_DUVELLEROY {
     System.out.println("4)CelsiusVersFarenheit");
     System.out.println("5)FarenheitVersKelvin");
     System.out.println("6)KelvinVersFarenheit");
-    nb = sc.nextInt();
+    nb = sc.nextInt(); //Input de la conversion à accomplir
    
-while (nb < 1 || nb > 6){
+while (nb < 1 || nb > 6){ //Réponse différente que entre 1 et 6, alors erreur
     System.out.println("Erreur: Saisir une commande entre 1 et 6");
         System.out.println("\nQuelle conversion souhaitez-vous faire ?:");
-        nb = sc.nextInt();
+        nb = sc.nextInt(); //Redemande jusqu'a ce que l'utilisateur donne une réponse entre 1 et 6
             
             }
 System.out.println("Quelle temperature a convertir ?");
-double T = sc.nextDouble();
-switch(nb){
+double T = sc.nextDouble(); //Input d'un float
+switch(nb){ //Création du menu en fonction de la réponse choisie au dessus
    
        case 1: 
            System.out.println("Température en Kelvin: " + Numero1.CelsiusVersKelvin(T));

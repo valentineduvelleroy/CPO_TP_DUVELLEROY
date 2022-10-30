@@ -7,13 +7,13 @@
  *
  * @author valen
  */
-public class Convertisseur {
-        int nbConversions = 0;
+public class Convertisseur { //Création de la classe Convertisseur
+        int nbConversions = 0; //Initialisation à 0
     int nb = nbConversions;
    
-public double CelsiusVersKelvin ( double TC ){
-    double TK = TC + 273.14;
-    nbConversions +=1;
+public double CelsiusVersKelvin ( double TC ){ //Double pour float
+    double TK = TC + 273.14; 
+    nbConversions +=1; //On ajoute +1 a nbConversions à chaque conversion qu'on fait
         return TK;
 }
 
@@ -48,7 +48,7 @@ public double KelvinVersFarenheit ( double TK ){
 }
 @Override
 public String toString () {
- return "nb de conversions"+ nbConversions;
+ return "nb de conversions"+ nbConversions; //nbConversions sera égal aux nombres de conversions totales
 }
 
 }
