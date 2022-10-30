@@ -25,7 +25,7 @@ public class Voiture {
     @Override
     public String toString() {
         String V;
-        V = Modele + " " + Marque + " " + PuissanceCV + " " + proprietaire;
+        V = Modele + " " + Marque + " (" + PuissanceCV + " cv)";
         return V;
     }
     

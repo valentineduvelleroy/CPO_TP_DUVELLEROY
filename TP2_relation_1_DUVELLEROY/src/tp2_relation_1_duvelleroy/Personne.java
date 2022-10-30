@@ -15,18 +15,33 @@ public class Personne {
     public Voiture[] liste_voitures;
             
             
-    public Personne(String unPrenom, String unNom, int unnb, Voiture[] uneliste){
+    public Personne(String unPrenom, String unNom){
         prenom = unPrenom;
         nom = unNom;
-        nbVoitures = unnb;
-        liste_voitures = uneliste;
+        nbVoitures = 0;
+        liste_voitures = new Voiture[3];
     }
     
         @Override
         public String toString(){
             String P;
-            P = prenom + " " + nom + " " + nbVoitures + " " + liste_voitures;
+            P = prenom + " " + nom + " " + nbVoitures;
             return P;
         }
     
+    public boolean ajouter_voiture(Voiture voiture_a_ajouter) {
+     if (nbVoitures == 3){
+         System.out.println("Nombre de voitures maximum atteint");
+         return false;
+     }
+     if (voiture_a_ajouter.proprietaire != null){
+         System.out.println("Cette voiture a déjà un propriétaire");
+         return false;
+     }
+     liste_voitures[nbVoitures] = voiture_a_ajouter;
+     nbVoitures ++;
+     voiture_a_ajouter.proprietaire = this ;
+     return true;
+}
+
 }
