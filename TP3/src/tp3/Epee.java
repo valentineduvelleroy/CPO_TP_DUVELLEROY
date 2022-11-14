@@ -9,6 +9,20 @@ package tp3;
  *
  * @author valen
  */
-public class Epee {
+
+public class Epee extends Arme{
+    private int indice;
+    
+
+    public Epee(String n, int i, int ind){
+        super(n, i);
+        this.indice = indice;
+
+    }   
+
+    @Override
+    public String toString() {
+        return "Epee{" + "indice=" + indice + '}';
+    }
     
 }
